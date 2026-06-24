@@ -14,7 +14,7 @@ Discord机器人支持两种消息发送方式：
 访问 https://discord.com/developers/applications 并使用你的Discord账号登录
 
 ### 2. 创建应用
-点击"New Application"按钮，输入应用名称（例如：A股智能分析机器人），然后点击"Create"
+点击"New Application"按钮，输入应用名称（例如：US Stock Bot），然后点击"Create"
 
 ### 3. 配置机器人
 在左侧导航栏中点击"Bot"，然后点击"Add Bot"按钮，确认添加
@@ -55,7 +55,7 @@ DISCORD_BOT_TOKEN=your-discord-bot-token
 DISCORD_MAIN_CHANNEL_ID=your-channel-id
 DISCORD_WEBHOOK_URL=your-webhook-url (可选)
 DISCORD_INTERACTIONS_PUBLIC_KEY=your-public-key (仅接收入站 Interaction/Webhook 回调时需要)
-DISCORD_BOT_STATUS=A股智能分析 | /help
+DISCORD_BOT_STATUS=US Stock Bot | /help
 ```
 
 如果你配置了 Discord Interaction / Webhook 入站回调，务必在 Discord Developer Portal 的 `General Information -> Public Key` 复制公钥并填入 `DISCORD_INTERACTIONS_PUBLIC_KEY`；系统会使用该公钥校验每个入站请求的 Ed25519 签名，验签失败会直接拒绝请求。
